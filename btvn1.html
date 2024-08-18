@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<hr>
+<h1>1.HTML Basic</h1>
+<p>In this chapter we will show some basic HTML examples.</p>
+<p>Don't worry if we use tags you have not learned about yet.</p>
+<hr>
+<h4>HTML Documents</h4>
+<p>All HTML documents must start with a document type declaration:
+    <!DOCTYPE html>.
+
+    The HTML document itself begins with <html> and ends with
+
+    </html>.
+
+    The visible part of the HTML document is between
+
+    <body> and </body>.
+<h1>2. HTML Elements</h1>
+<hr>
+<p>The HTML element is everything from the start tag to the end tag:
+
+    <tagname>Content goes here...</tagname>
+</p>
+<p>Note: Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty
+    elements do not have an end tag!</p>
+<hr>
+<h3>Ví dụ </h3>
+<pre><code>&lt;tag&gt;content&lt;/tag&gt;</code></pre>
+<h1>3. HTML Attributes</h1>
+<hr>"HTML attributes provide additional information about HTML elements."
+<hr>
+<h3> HTML Attributes</h3>
+<ul>
+    <li>Tất cả các phần tử HTML có thể có các thuộc tính</li>
+    <li>Thuộc tính cung cấp thông tin bổ sung về các thành phần</li>
+    <li>Thuộc tính luôn được chỉ định trong thẻ bắt đầu</li>
+    <li>Thuộc tính thường có cặp tên/ giá trị như name="value"</li>
+</ul>
+<h3> Ví dụ</h3>
+<p> Thẻ &lt; a &gt; định nghĩa một siêu liên kết. href Thuộc tính chỉ định URL của trang mà liên kết dẫn đến:</p>
+<pre><code>&lt;a&gt; href="https://www.w3schools.com">Visit W3Schools.&lt;/a&gt;</code></pre>
+<h1>4. HTML Headings</h1>
+<hr> HTML headings are titles or subtitles that you want to display on a webpage.
+<hr>
+<h4>Note:</h4>
+<p> Browsers automatically add some white space (a margin) before and after a heading. </p>
+<p>Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+<hr>Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute,
+using the CSS font-size property:
+<p>Ví dụ:</p>
+<pre><code>&lt;h1 &gt;style="font-size:60px;">Heading.&lt;/h1 &gt;</code></pre>
+<h1>5. HTML Paragraphs</h1>
+<hr>
+<p>The <code>&lt;p&gt;</code> tag is used to define a paragraph. Example:</p>
+<hr>
+<p>Ví dụ:</p>
+<pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+<h1>6. HTML Styles</h1>
+<hr>The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+<hr>
+<p>Ví dụ:</p>
+<code>&lt;tag style="property:value"&gt;content&lt;/tag&gt;</code>
+<h1>7. HTML Formatting</h1>
+<hr>HTML contains several elements for defining text with a special meaning.
+<hr>
+<p>The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.</p>
+<h3>* Ví dụ *</h3>
+<pre><code>&lt;strong&gt;Bold text&lt;/strong&gt;</code></pre>
+<h1>8. HTML Quotations</h1>
+<hr>In this chapter we will go through the blockquote >, q >, abbr >, address >, cite >, và bdo > HTML.hr> h4> HTML abbr
+> cho viết tắt như:"CV, GOV, ADJ" </h4>
+<hr>
+<h4> HTML < abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". </h4>
+<p>Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the
+    element. </p>
+<h4> Ví dụ: </h4>
+<pre><code>&lt;p &gt;The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.&lt;/p &gt;</code></pre>
+<h1>9. HTML Comments</h1>
+<hr>HTML comments are not displayed in the browser, but they can help document your HTML source code.
+<hr>
+<p>You can add comments to your HTML source by using the following syntax:</p>
+<pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+<h1>10. HTML Colors</h1>
+<hr>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+<hr>
+<h3>* Ví dụ *</h3>
+<pre><code>&lt;div style="color: #ff0000;"&gt;This is red text.&lt;/div&gt;</code></pre>
+<h1>11. HTML Links</h1>
+<hr>Links are found in nearly all web pages. Links allow users to click their way from page to page.
+<hr>
+<h3> HTML Links - Hyperlinks</h3>
+<p>HTML links are hyperlinks.
+
+    You can click on a link and jump to another document.
+
+    When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+<p>Note: A link does not have to be text. A link can be an image or any other HTML element!
+</p>
+<h3>* Ví dụ *</h3>
+<pre><code>&lt;h1 style ="background-color:DodgerBlue;"&gt;Marry Christmast &lt;/h1 &gt;</code></pre>
+<h1>12. HTML Images</h1>
+<hr>Images can improve the design and the appearance of a web page.
+<hr>
+<h3>HTML Images Syntax</h3>
+<p>The HTML img tag is used to embed an image in a web page.</p>
+
+<p> are not technically inserted into a web page; images are linked to web pages. The img tag creates a holding
+    space for the referenced image.</p>
+
+<p>The img tag is empty, it contains attributes only, and does not have a closing tag.</p>
+
+<p>The img tag has two required attributes:</p>
+<h3>* Ví dụ *</h3>
+<pre><code>&lt;img src="url" alt="alternatetext"&gt;</code></pre>
+<h1>13. HTML Tables</h1>
+<hr>HTML tables allow web developers to arrange data into rows and columns.
+<hr>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;&lt;th&gt;Header 1&lt;/th&gt;&lt;th&gt;Header 2&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Row 1, Cell 1&lt;/td&gt;&lt;td&gt;Row 1, Cell 2&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Row 2, Cell 1&lt;/td&gt;&lt;td&gt;Row 2, Cell 2&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;</code></pre>
+<h1>14. HTML Lists</h1>
+<hr>HTML lists allow web developers to group a set of related items in lists.
+<hr>
+<h3>Unordered HTML List</h3>
+<p>An unordered list starts with the ul> tag. Each list item starts with the li> tag.
+
+    The list items will be marked with bullets (small black circles) by default:
+<ul>
+    <li>Xanh nhài sữa</li>
+    <li>Chocomint</li>
+    <li>Matcha</li>
+</ul>
+<h1>15. HTML Block and Inline Elements</h1>
+<hr>Every HTML element has a default display value, depending on what type of element it is.The two most common display
+values are block and inline.
+<hr>
+<pre><code>&lt;div&gt;This is a block-level element.&lt;/div&gt;
+    &lt;span&gt;This is an inline element.&lt;/span&gt;</code></pre>
+</body>
+
+</html>
