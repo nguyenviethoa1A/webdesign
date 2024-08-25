@@ -1,0 +1,37 @@
+body {
+    background-color: bisque;
+    color: aliceblue;
+}
+
+h1 {
+    background-color: rgb(255, 6, 6);
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+ul {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: blue;
+    color: rgb(67, 27, 27);
+}
+
+ol {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: blue;
+    color: rgb(67, 27, 27);
+}
+}
