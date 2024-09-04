@@ -1,0 +1,68 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+
+table:hover {
+    color: #ddd;
+}
+
+td {
+    color: black;
+}
+
+.hinhanh {
+    width: 1260px;
+}
+
+.anhnho {
+    margin-right: 15px;
+    width: 410px;
+    height: 300px;
+    float: left;
+    opacity: 50%;
+}
+
+.anhnho1 {
+    margin-right: 0;
+    width: 410px;
+    height: 300px;
+    float: left;
+    opacity: 50%;
+}
+
+.anhnho:hover,
+.anhnho1:hover {
+    opacity: 100%;
+}
+
+p {
+    clear: both;
+}
+
+h1 {
+    margin-top: 50px;
+}

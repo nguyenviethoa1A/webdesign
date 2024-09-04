@@ -1,0 +1,26 @@
+header {
+    width: 800px;
+    padding-left: 0 200px;
+    max-width: fit-content;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

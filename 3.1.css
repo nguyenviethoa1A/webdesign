@@ -1,0 +1,58 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Chuyển hướng sắp xếp sang hàng dọc */
+    width: 100%;
+    max-width: 600px;
+    height: 900px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: #fff;
+
+}
+
+#redbox {
+    display: flex;
+    /* Kích hoạt Flexbox cho hộp */
+    justify-content: center;
+    /* Căn giữa nội dung theo chiều ngang */
+    align-items: center;
+    /* Căn giữa nội dung theo chiều dọc */
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: red;
+    text-align: center;
+
+}
+
+#bluebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+
+#greenbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: green;
+    text-align: center;
+
+}
+
+.title {
+    background-color: gray;
+    border: 2px solid;
+    height: 20px;
+}
