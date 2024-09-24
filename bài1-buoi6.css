@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: 600px;
+    width: 100%;
+    background-color: #170F23;
+    font-family: 'Inter';
+}
+
+.container .text h1 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding: 50px 50px 10px 50px;
+}
+
+.container .text h2 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding: 0px 50px 5px 50px;
+}
+
+.container .playlist {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.container .playlist .list {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .playlist .list .img,
+.filter,
+.icon {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.container .playlist .list .img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .playlist .list .img img {
+    height: 200px;
+    background-size: contain;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.container .playlist .list .text {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 220px;
+}
+
+.container .playlist .list .text h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container .playlist .list .text p {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.container .playlist .list .icon {
+    position: absolute;
+    top: 90px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.container .playlist .list .icon i {
+    margin: 10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.container .playlist .list:hover .icon i {
+    opacity: 1;
+}
+
+.container .playlist .list:hover .filter {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.container .playlist .list:hover img {
+    transform: scale(1.1);
+}
