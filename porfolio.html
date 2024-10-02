@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Cá Nhân</title>
+    <link rel="stylesheet" href="porfolio.css">
+    <script>
+        // Script to toggle between light and dark mode
+        function switchStyle(style) {
+            document.documentElement.className = style;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-link">Sở Thích</a>
+                <a href="#" class="nav-link">Kỹ năng</a>
+                <a href="#" class="nav-link">Học tập</a>
+                <a href="#" class="nav-link">Định hướng</a>
+                <a href="#" class="nav-link">Liên hệ</a>
+            </nav>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="profile-header">
+            <img src="351314512_786307062906357_1640987252889672748_n.jpg" alt="Ảnh đại diện" class="profile-pic">
+            <div class="profile-info">
+                <h1 class="name">Nguyễn Việt Hòa</h1>
+                <p class="title">Vị trí: Lập trình viên</p>
+                <p class="contact-info">Email: nguyenviethoa2903@gmail.com | SĐT: (+84) 333.035.751</p>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <section class="profile-body">
+            <div class="grid-container">
+                <section class="about">
+                    <h2>Sở Thích</h2>
+                    <p>Chơi game</p>
+                    <p>Nghe nhạc</p>
+                    <p>Nuôi mèo "Hoàng Thượng"</p>
+                </section>
+
+                <section class="skills">
+                    <h2>Kỹ năng</h2>
+                    <ul>
+                        <li>Nghiêm túc trong môi trường làm việc</li>
+                        <li>Sử dụng Adobe Photoshop, Illustrator</li>
+                        <li>HTML, CSS, JavaScript</li>
+                    </ul>
+                </section>
+
+                <section class="education">
+                    <h2>Quá trình học tập</h2>
+                    <div class="job">
+                        <h3>2023-2027</h3>
+                        <p><strong>Đại học:</strong> Đại học Thủ đô Hà Nội</p>
+                        <p><strong>Ngành:</strong> Công nghệ thông tin</p>
+                        <p><strong>Lớp:</strong> CNTT D2023</p>
+                    </div>
+                </section>
+
+                <section class="projects">
+                    <h2>Liên Kết Bài Tập</h2>
+                    <ul>
+                        <li><a href="https://docs.google.com/document/d/1ILQfWpDaQpGL_2JOLhf_L3NQnQ78n3ZbarbzLOTdiOU/edit?usp=sharing"
+                                target="_blank">Bài Tập Về Nhà</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Nguyễn Việt Hòa. Mọi quyền được bảo lưu.</p>
+        </footer>
+
+        <!-- Style Switcher -->
+        <div class="style-switcher">
+            <button onclick="switchStyle('style-light')">Light Mode</button>
+            <button onclick="switchStyle('style-dark')">Dark Mode</button>
+        </div>
+    </div>
+</body>
+
+</html>
