@@ -1,0 +1,255 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables for Light Mode */
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --primary-color: #007BFF;
+    --secondary-color: #fff;
+    --accent-color: #ffcc00;
+}
+
+/* Variables for Dark Mode */
+:root.style-dark {
+    --bg-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --primary-color: #34495e;
+    --secondary-color: #7f8c8d;
+    --accent-color: #ffcc00;
+}
+
+/* Body and Container */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar */
+.header {
+    background-color: var(--primary-color);
+    padding: 13px 0;
+    border-radius: 8px 8px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--bg-color);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5em;
+    color: var(--text-color);
+}
+
+.title {
+    font-size: 1.2em;
+    
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+/* Main Grid */
+.profile-body {
+    margin-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Job/Education Section */
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 0 0 8px 8px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Style Switcher */
+.style-switcher {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.style-switcher button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.style-switcher button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Sidebar Menu Dọc cho Di Động */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:100 vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-menu.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.menu-icon::before {
+    content: '\2630';
+    font-size: 36px;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
