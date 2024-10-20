@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Đây là thứ 2</h2> 
+  <p>Chào bạn</p> 
+  <p>Dự báo thời tiết hôm nay <b>37*C</b>nắng nóng gay gắt</p>
+  <p id="demo"></p>
+
+  <script>
+    var x = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML = 'Chỉ số tia cực tím cao (index 0) is: ' + x[0].innerHTML;
+  </script>
+
+  <h2>Đây là thứ 2</h2> 
+  <p>Chào bạn</p> 
+  <p class="intro">Một ngày mới lại bắt đầu</p>
+  <p class="intro">Dự báo thời tiết hôm nay <b>37*C</b>nắng nóng gay gắt</p>
+
+  <p id="demo"></p>
+
+  <script>
+    var x = document.getElementsByClassName("intro");
+    document.getElementById("demo").innerHTML = 'Chỉ số tia cực tím cao (index 0) is: ' + x[0].innerHTML;
+  </script>
+</body>
+</html>
