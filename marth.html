@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hiện phép toán</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Các phép toán</h1>
+
+    <!-- Phép cộng -->
+    <div>
+        <input type="number" id="add1" value="3">
+        +
+        <input type="number" id="add2" value="3">
+        =
+        <input type="text" id="addResult" readonly>
+        <button onclick="calculate('add')">Thực hiện</button>
+    </div>
+
+    <!-- Phép trừ -->
+    <div>
+        <input type="number" id="sub1" value="3">
+        -
+        <input type="number" id="sub2" value="3">
+        =
+        <input type="text" id="subResult" readonly>
+        <button onclick="calculate('sub')">Thực hiện</button>
+    </div>
+
+    <!-- Phép nhân -->
+    <div>
+        <input type="number" id="mul1" value="2">
+        *
+        <input type="number" id="mul2" value="2">
+        =
+        <input type="text" id="mulResult" readonly>
+        <button onclick="calculate('mul')">Thực hiện</button>
+    </div>
+
+    <!-- Phép chia -->
+    <div>
+        <input type="number" id="div1" value="3">
+        /
+        <input type="number" id="div2" value="3">
+        =
+        <input type="text" id="divResult" readonly>
+        <button onclick="calculate('div')">Thực hiện</button>
+    </div>
+
+    <h2>Các phép toán vừa thực hiện</h2>
+    <div id="history"></div>
+
+    <script src="marth.js"></script>
+</body>
+</html>

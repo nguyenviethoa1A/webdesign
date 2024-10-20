@@ -1,0 +1,25 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+input {
+    width: 50px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+#history {
+    margin-top: 20px;
+}
+
+.history-item {
+    margin: 5px 0;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>FORM ĐĂNG KÝ</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="ho">Họ</label>
+            <input type="text" id="ho" name="ho"><br>
+
+            <label for="ten">Tên</label>
+            <input type="text" id="ten" name="ten"><br>
+
+            <label for="ngaysinh">Ngày sinh:</label>
+<select name="ngay" id="ngay"></select>
+<select name="thang" id="thang"></select>
+<select name="nam" id="nam"></select><br>
+            </select><br>
+
+            <label>Giới tính:</label>
+            <input type="radio" id="nam" name="gioitinh" value="nam" checked> Nam
+            <input type="radio" id="nu" name="gioitinh" value="nu"> Nữ<br>
+
+            <label for="sodienthoai">Số điện thoại</label>
+            <input type="text" id="sodienthoai" name="sodienthoai"><br>
+
+            <label>Sở thích:</label>
+            <input type="checkbox" name="sothich" value="docsach"> Đọc sách
+            <input type="checkbox" name="sothich" value="xemphim"> Xem phim
+            <input type="checkbox" name="sothich" value="nghenhac"> Nghe nhạc
+            <input type="checkbox" name="sothich" value="dabong"> Đá bóng<br>
+
+            <label for="khac">Khác:</label>
+            <textarea id="khac" name="khac"></textarea><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

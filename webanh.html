@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web anh</title>
+    <link rel="stylesheet" href="webanh.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Ảnh trong slideshow -->
+        <div class="mySlides fade">
+            <img src="1-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="4ad5fbdb60a20cbd2b7f881256b4426c.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="d59f70ab201b09c8ecbd1994ea59b067.jpg" style="width:100%">
+        </div>
+
+        <!-- Nút điều khiển bên trái và bên phải -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <!-- Các dấu chấm chỉ số -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="webanh.js"></script>
+</body>
+</html>
