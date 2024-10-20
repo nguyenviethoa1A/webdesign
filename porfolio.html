@@ -6,12 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hồ Sơ Cá Nhân</title>
     <link rel="stylesheet" href="porfolio.css">
+    
     <script>
         // Script to toggle between light and dark mode
         function switchStyle(style) {
             document.documentElement.className = style;
         }
+
+        // Script for smooth scrolling
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.navbar a, .sidebar-menu a');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Toggle Sidebar Menu
+            document.querySelector('.menu-toggle').addEventListener('click', () => {
+                document.querySelector('.sidebar-menu').classList.toggle('active');
+            });
+        });
+
+        // Add active class to the current link in the navbar
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.navbar a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+
+        // Change profile picture on hover
+        function changeProfilePic(imagePath) {
+            document.querySelector('.profile-pic').src = imagePath;
+        }
+
+        // Return to original profile picture
+        function resetProfilePic() {
+            document.querySelector('.profile-pic').src = '351314512_786307062906357_1640987252889672748_n.jpg';
+        }
     </script>
+
 </head>
 
 <body>
@@ -19,17 +60,35 @@
         <!-- Navbar -->
         <header class="header">
             <nav class="navbar">
-                <a href="#" class="nav-link">Sở Thích</a>
-                <a href="#" class="nav-link">Kỹ năng</a>
-                <a href="#" class="nav-link">Học tập</a>
-                <a href="#" class="nav-link">Định hướng</a>
-                <a href="#" class="nav-link">Liên hệ</a>
+                <a href="#about" class="nav-link">Sở Thích</a>
+                <a href="#skills" class="nav-link">Kỹ năng</a>
+                <a href="#education" class="nav-link">Học tập</a>
+                <a href="#projects" class="nav-link">Định hướng</a>
+                <a href="#contact" class="nav-link">Bài tập</a>
             </nav>
-        </header>
+        <!-- Menu Icon -->
+        <div class="menu-toggle">
+            <div class="menu-icon"></div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="#about">Sở Thích</a></li>
+                <li><a href="#skills">Kỹ Năng</a></li>
+                <li><a href="#education">Học Tập</a></li>
+                <li><a href="#projects">Định Hướng</a></li>
+                <li><a href="#contact">Bài tập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        
 
         <!-- Profile Section -->
-        <section class="profile-header">
-            <img src="351314512_786307062906357_1640987252889672748_n.jpg" alt="Ảnh đại diện" class="profile-pic">
+        <section class="profile-header" id="profile">
+            <img src="351314512_786307062906357_1640987252889672748_n.jpg" alt="Ảnh đại diện" class="profile-pic"
+                >
             <div class="profile-info">
                 <h1 class="name">Nguyễn Việt Hòa</h1>
                 <p class="title">Vị trí: Lập trình viên</p>
@@ -40,14 +99,14 @@
         <!-- Main Content Grid -->
         <section class="profile-body">
             <div class="grid-container">
-                <section class="about">
+                <section class="about" id="about">
                     <h2>Sở Thích</h2>
                     <p>Chơi game</p>
                     <p>Nghe nhạc</p>
-                    <p>Nuôi mèo "Hoàng Thượng"</p>
+                    <p>Nuôi mèo</p>
                 </section>
 
-                <section class="skills">
+                <section class="skills" id="skills">
                     <h2>Kỹ năng</h2>
                     <ul>
                         <li>Nghiêm túc trong môi trường làm việc</li>
@@ -56,7 +115,7 @@
                     </ul>
                 </section>
 
-                <section class="education">
+                <section class="education" id="education">
                     <h2>Quá trình học tập</h2>
                     <div class="job">
                         <h3>2023-2027</h3>
@@ -66,7 +125,7 @@
                     </div>
                 </section>
 
-                <section class="projects">
+                <section class="projects" id="projects">
                     <h2>Liên Kết Bài Tập</h2>
                     <ul>
                         <li><a href="https://docs.google.com/document/d/1ILQfWpDaQpGL_2JOLhf_L3NQnQ78n3ZbarbzLOTdiOU/edit?usp=sharing"
@@ -77,7 +136,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <p>&copy; 2024 Nguyễn Việt Hòa. Mọi quyền được bảo lưu.</p>
         </footer>
 
@@ -87,6 +146,7 @@
             <button onclick="switchStyle('style-dark')">Dark Mode</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
