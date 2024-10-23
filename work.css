@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Container để sắp xếp các buổi học */
+.bt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Căn giữa các buổi */
+    gap: 20px; /* Khoảng cách giữa các buổi */
+    margin-top: 30px;
+}
+
+/* Thiết kế cho từng buổi học */
+.bt > div {
+    background: linear-gradient(135deg, #f76b1c, #ffcc33);
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 180px; /* Điều chỉnh chiều rộng của mỗi buổi */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bt > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bt-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bt-content {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    color: #333;
+    
+}
+
+.bt-content p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 8px;
+}
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Màu nền đen */
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border-radius: 20px; /* Tạo viền bo tròn */
+    font-size: 1.2em; /* Tăng kích thước chữ */
+    transition: background-color 0.3s ease;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 30px; /* Cách phía trên */
+    left: 20px; /* Cách phía bên trái */
+    cursor: pointer;
+}
+
+.home-button i {
+    margin-right: 10px; /* Khoảng cách giữa icon và chữ */
+}
+
+.home-button:hover {
+    background-color: #555; /* Màu nền khi hover */
+}
+
