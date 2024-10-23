@@ -100,7 +100,6 @@ body {
 
 .title {
     font-size: 1.2em;
-    
     margin-bottom: 10px;
 }
 
@@ -206,7 +205,7 @@ ul li {
     position: fixed;
     top: 0;
     right: 0;
-    height:100 vh;
+    height: 25vh;
     width: 100%;
     background-color: var(--primary-color);
     opacity: 0;
@@ -219,34 +218,52 @@ ul li {
     flex-direction: column;
 }
 
-.sidebar-menu.active {
-    opacity: 1;
-    transform: translateX(0);
+/* Ẩn menu-toggle và sidebar menu mặc định */
+.menu-toggle, .sidebar-menu {
+    display: none;
 }
 
-.menu-toggle {
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 1100;
-}
-
-.menu-icon::before {
-    content: '\2630';
-    font-size: 36px;
-    color: var(--text-color);
-}
-
+/* Hiển thị menu-toggle khi màn hình nhỏ hơn 768px */
 @media (max-width: 768px) {
     .navbar {
-        display: none;
+        display: none; /* Ẩn navbar trên mobile */
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Hiển thị nút menu */
+        position: fixed;
+        top: 0; /* Căn đồng nhất với thanh navbar */
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .sidebar-menu {
+        display: flex; /* Hiển thị menu dọc khi kích hoạt */
+        top: 0;
+    }
+
+    .sidebar-menu.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .menu-icon::before {
+        content: '\2630';
+        font-size: 24px;
+        color: var(--text-color);
     }
 
     .grid-container {
